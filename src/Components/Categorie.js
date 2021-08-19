@@ -2,7 +2,7 @@ import { render } from "@testing-library/react";
 import { Card,Button } from 'react-bootstrap';
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import './styles.css'
 
 const Categorie = (props) => {
 
@@ -15,38 +15,35 @@ const Categorie = (props) => {
 
       <div>
      
-          <Card dir="ltr"style={{
-        display:'flex',
+<Card dir="ltr" className='Home'style={{
 
-width: '50rem',
+display:'flex',
 
-padding:'10px', }}>
+   width: '35rem',
 
-      <Card.Img variant="top" src={movie.posterURL}
-      
-      styles={{
+padding:'10px',
 
-        width: '10px',
-
-        }}/>
+}}>
+  
+    <Card.Title>{movie.title}</Card.Title>
 
 
   <Card.Body>
-    <Card.Title>{movie.title}</Card.Title>
-   
-  
-  
 
-      
    
-  <Button>
-            <Link to={`/movie/${movie.id}`} className='link-warning'> movies details</Link>
+   
+  <Button className='Button' >
+
+  <Card.Img variant="top" src={movie.posterURL} className='Poster'/>
+  <Link className='Link'to={`/movie/${movie.id}`} className='link-warning'>movie detail</Link>
+            
   </Button>
 
   </Card.Body>
 
-
 </Card>
+
+
      
     
       </div>

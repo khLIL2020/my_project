@@ -10,23 +10,29 @@ import './styles.css'
 
   function Film(props) {
     const {movie} = props;
-    
+    const WrappedLink = () => {
+      return (
+
+          <Link style={{display: 'block', height: '100%'}} to={`/movie/${movie.id}`} className='link-warning'><Card.Img variant="top" src={movie.posterURL} className='Poster'/></Link>
+  
+      )
+    }
       render()
   
   {  return(
   
 
-<Card dir="ltr" className='Moviecard' style={{
+<Card dir="ltr" className='Home'style={{
 
 display:'flex',
 
-   width: '20rem',
+   width: '35rem',
 
 padding:'10px',
 
 }}>
   
-    <Card.Title>{movie.title}</Card.Title>
+
 
 
   <Card.Body>
@@ -35,13 +41,10 @@ padding:'10px',
    
   <Button className='Button' >
 
-  <Card.Img variant="top" src={movie.posterURL} />
-  <Link className='Link'to={`/movie/${movie.id}`} className='link-warning'>movie detail</Link>
-            
+<WrappedLink/>
   </Button>
 
   </Card.Body>
-
 
 </Card>
 

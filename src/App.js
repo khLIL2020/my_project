@@ -8,13 +8,13 @@ import Detail from './Components/Detail'
 import Bar from './Components/Navbar';
 import{ BrowserRouter as Router } from 'react-router-dom'
 import {  Route, Switch } from 'react-router-dom';
-
+import './Components/styles.css'
 function App() {
 
   
 
   return  (
-    <div>
+    <div className='App'>
   
 {Bar()}
  <Router>

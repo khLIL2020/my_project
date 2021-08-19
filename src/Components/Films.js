@@ -118,7 +118,7 @@ const movies = [
 function Home(){
     
   return (
-      <div className= "Moviecard"> <Movielist movies={movies} className= "Moviecard"/>
+      <div className= "Moviecard"> <Movielist movies={movies}/>
     </div>
      
   )

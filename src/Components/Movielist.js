@@ -1,6 +1,6 @@
 import React, { Component }  from 'react';
 import MovieCard from '../Components/Moviecard';
-import Search from './Searchbar'
+
 function Series(props) {
 
   const {movies} = props;
@@ -9,7 +9,7 @@ function Series(props) {
     <ul>
       
       {movies.map((item,key) =>
-        <ul key={key}> 
+        <ul className='Home' key={key}> 
           <MovieCard movie={item}/>
 
 

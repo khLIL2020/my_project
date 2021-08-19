@@ -1,0 +1,113 @@
+.film
+{background-color: 'black';
+  width: '20rem';
+   height:'20rem';
+    margin:'10px' 
+}
+.Button{
+  background-color:white
+}
+
+.Moviecard
+{
+
+  display:flex;
+    
+   width: '20rem';
+    
+  padding:'10px';
+
+
+    
+}
+
+.custom-btn {
+  background: #fff;
+  color: red;
+  border: 2px solid red;
+  border-radius: 3px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+.Detail
+{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:nowrap;
+padding:30px;
+margin-left: 100px;
+border: 5px solid hsl(60, 95%, 48%);
+width: '18rem'
+}
+
+.Poster
+{
+
+  height:380px;
+  width: 258px;
+}
+
+.CardBody
+{ display:flex;
+  flex-direction:column;
+  flex-wrap:nowrap;
+  padding-left:100px
+}
+.Home  
+{ display:flex;
+  margin-left:100px;
+  height: 430px;
+  margin-bottom:50px;
+  border:white;
+
+
+}
+.Button
+{
+  border:rgb(231, 231, 8);
+background-color:white
+}
+.App
+{
+  display:flex;
+  flex-wrap:wrap;
+}
+.video
+{
+  align-self:center ;
+}
+
+.paragraph
+{
+font-size: medium;
+
+}
+.title
+{
+  font-size: x-large;
+}
+.anothertitle
+{
+  font-size: medium;
+}
+.Paragraph
+{
+
+  font-size: x-large;
+ padding: 100px;
+ padding-bottom: 280px;
+}
+.Aboutus
+{
+display:flex;
+flex-wrap:wrap;
+justify-content: space-between;
+}
+.Paragraph2
+{
+  padding-left: 100px;
+  padding-right: 100px;
+  font-size: xx-small;
+  padding:100px
+
+}
