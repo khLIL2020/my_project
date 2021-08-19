@@ -1,9 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import SearchBar from './SearchBar';
-import CountryList from './CountryList';
-import {movies} from './Films'
-
-
+{/*
 
 const SearchPage = (props) => {
   
@@ -42,3 +37,4 @@ const SearchPage = (props) => {
    );
 }
 export default SearchPage;
+*/}

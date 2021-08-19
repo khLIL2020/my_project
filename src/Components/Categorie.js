@@ -8,7 +8,14 @@ const Categorie = (props) => {
 
   
   const {movie} = props;
-  console.log(movie)
+
+const WrappedLink = () => {
+      return (
+
+          <Link style={{display: 'block', height: '100%'}} to={`/movie/${movie.id}`} className='link-warning'><Card.Img variant="top" src={movie.posterURL} className='Poster'/></Link>
+  
+      )
+    }
   render()
   {
     return(
@@ -34,9 +41,8 @@ padding:'10px',
    
   <Button className='Button' >
 
-  <Card.Img variant="top" src={movie.posterURL} className='Poster'/>
-  <Link className='Link'to={`/movie/${movie.id}`} className='link-warning'>movie detail</Link>
-            
+
+  <WrappedLink/>
   </Button>
 
   </Card.Body>
